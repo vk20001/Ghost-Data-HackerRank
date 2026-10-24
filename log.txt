@@ -511,3 +511,23 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T19:01:00Z] Guide user to the GitHub app repository-access setting
+
+User Prompt (verbatim, secrets redacted):
+see
+[Screenshot: GitHub Settings > Applications, "Authorized GitHub Apps" tab, listing ChatGPT Codex Connector and Claude]
+
+Agent Response Summary:
+The screenshot shows the Authorized GitHub Apps tab, which only lists apps allowed to act as the user. Repository access is set on the Installed GitHub Apps tab: Claude > Configure > Repository access > add Ghost-Data-HackerRank > Save. Pointed the user there.
+
+Actions:
+* No files changed besides this log entry
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
