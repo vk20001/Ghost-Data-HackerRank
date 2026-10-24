@@ -5,3 +5,5 @@ venv/
 .env
 code.zip
 output.csv
+audit_trace.jsonl
+review_queue.csv

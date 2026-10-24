@@ -1,6 +1,6 @@
 # Evaluation Report
 
-Generated 2026-10-24T20:26:08+00:00 by `python3 code/evaluation/report.py`.
+Generated 2026-10-24T20:34:36+00:00 by `python3 code/evaluation/report.py`.
 
 ## How we evaluate
 
@@ -19,8 +19,8 @@ Metric definitions:
 
 | Configuration | Cases | Status accuracy | Step precision | Step recall | Step F1 | Sequence accuracy |
 |---|---|---|---|---|---|---|
-| Submission (LLM intent + vision) | 32 | 100.0% | 0.979 | 0.953 | 0.966 | 71.9% |
-| Deterministic fallback only | 32 | 96.9% | 0.978 | 0.938 | 0.958 | 68.8% |
+| Submission (LLM intent + vision) | 32 | 100.0% | 0.995 | 0.969 | 0.982 | 81.2% |
+| Deterministic fallback only | 32 | 96.9% | 0.989 | 0.948 | 0.968 | 78.1% |
 
 ## Field-level accuracy (submission configuration)
 
@@ -32,7 +32,7 @@ Metric definitions:
 | `resource_id` | 93.3% |
 | `operation` | 93.8% |
 | `state` | 93.8% |
-| `evidence_id` | 95.3% |
+| `evidence_id` | 96.9% |
 
 ## Custom evaluation cases
 
@@ -62,8 +62,9 @@ Every change below came from reading a per-case diff produced by `code/evaluatio
 | 6. Restrict to fully remediated cases and a 45-minute window | 96.9% | 0.942 | 59.4% | Precision over recall: only cases whose remediation finished compete for anonymized records. |
 | 7. Deterministic case-order tie-break for identical candidate sets | 96.9% | 0.958 | 68.8% | Same rule as for accounts, so ties are resolved reproducibly. |
 | 8. LLM intent + vision extraction (Gemini), attachment and catalog-claim fixes | 100% | see below | see below | Vision exposed a PDF attachment misread as a message, and a catalog link contradicted by the screenshot itself (marketing_001 shows a different person); catalog links are now treated as claims. |
+| 9. Cite a covering snapshot as proof of absence | 100% | 0.982 | 81.3% | A sanity check on the 518 test outputs found 77 COMPLETE cases with an uncited verification step, which the contract forbids. A deleted account leaves nothing to observe, but a snapshot of the whole account system taken before audit_at that lacks the row proves it was absent. Uncited COMPLETE steps fell from 77 to 2. |
 
-Current submission configuration: status 100.0%, step F1 0.966, sequence 71.9%.
+Current submission configuration: status 100.0%, step F1 0.982, sequence 81.2%.
 
 ## Remaining failures
 
@@ -71,17 +72,11 @@ Current submission configuration: status 100.0%, step F1 0.966, sequence 71.9%.
 - Deleted accounts with no identifiers left are linked through the deletion job's timing and result; when several identical requests share a window, a deterministic case-order tie-break can pick the wrong account (case_23).
 - Anonymized analytics records are linked the same way and are only assigned when the match is unambiguous, so some are left out (case_25, case_26).
 - The case-order tie-break (used only when several cases have identical candidate sets) was confirmed on just two or three sample cases; it is a reproducible convention, not evidence.
-- Hand-written samples case_01, case_02, case_04 and case_31 prove account absence with a whole-table snapshot that simply lacks the row; the engine cites evidence only for records it actually observed.
+- About 30% of deletion cases depend on a tie-break when linking an identifier-free account or anonymized record; these are listed in review_queue.csv rather than hidden.
 
 Per-case differences (missing = expected but not produced, extra = produced but not expected):
 
 ```
-case_01: predicted COMPLETE, expected COMPLETE
-   missing  ('VERIFICATION', 'account_service', 'account_001', 'VERIFY_RECORD_ABSENT', 'ABSENT', 'evidence_54')
-   extra    ('VERIFICATION', 'account_service', 'account_001', 'VERIFY_RECORD_ABSENT', 'ABSENT', '')
-case_02: predicted COMPLETE, expected COMPLETE
-   missing  ('VERIFICATION', 'account_service', 'account_002', 'VERIFY_RECORD_ABSENT', 'ABSENT', 'evidence_54')
-   extra    ('VERIFICATION', 'account_service', 'account_002', 'VERIFY_RECORD_ABSENT', 'ABSENT', '')
 case_04: predicted COMPLETE, expected COMPLETE
    missing  ('VERIFICATION', 'account_service', 'account_004', 'VERIFY_RECORD_ABSENT', 'ABSENT', 'evidence_54')
 case_18: predicted INCOMPLETE, expected INCOMPLETE
@@ -95,7 +90,4 @@ case_25: predicted COMPLETE, expected COMPLETE
    missing  ('VERIFICATION', 'analytics_platform', 'analytics_1895', 'VERIFY_RECORD_ANONYMIZED', 'ANONYMIZED', 'evidence_92')
 case_26: predicted COMPLETE, expected COMPLETE
    missing  ('VERIFICATION', 'analytics_platform', 'analytics_4566', 'VERIFY_RECORD_ANONYMIZED', 'ANONYMIZED', 'evidence_92')
-case_31: predicted COMPLETE, expected COMPLETE
-   missing  ('VERIFICATION', 'account_service', 'account_4857', 'VERIFY_RECORD_ABSENT', 'ABSENT', 'evidence_51')
-   extra    ('VERIFICATION', 'account_service', 'account_4857', 'VERIFY_RECORD_ABSENT', 'ABSENT', '')
 ```

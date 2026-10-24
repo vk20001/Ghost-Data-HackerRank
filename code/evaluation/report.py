@@ -39,6 +39,10 @@ HISTORY = [
     ("8. LLM intent + vision extraction (Gemini), attachment and catalog-claim fixes", "100%", "see below", "see below",
      "Vision exposed a PDF attachment misread as a message, and a catalog link contradicted by the "
      "screenshot itself (marketing_001 shows a different person); catalog links are now treated as claims."),
+    ("9. Cite a covering snapshot as proof of absence", "100%", "0.982", "81.3%",
+     "A sanity check on the 518 test outputs found 77 COMPLETE cases with an uncited verification step, which the "
+     "contract forbids. A deleted account leaves nothing to observe, but a snapshot of the whole account system "
+     "taken before audit_at that lacks the row proves it was absent. Uncited COMPLETE steps fell from 77 to 2."),
 ]
 
 KNOWN_LIMITS = [
@@ -51,8 +55,8 @@ KNOWN_LIMITS = [
     "unambiguous, so some are left out (case_25, case_26).",
     "The case-order tie-break (used only when several cases have identical candidate sets) was "
     "confirmed on just two or three sample cases; it is a reproducible convention, not evidence.",
-    "Hand-written samples case_01, case_02, case_04 and case_31 prove account absence with a whole-table "
-    "snapshot that simply lacks the row; the engine cites evidence only for records it actually observed.",
+    "About 30% of deletion cases depend on a tie-break when linking an identifier-free account or "
+    "anonymized record; these are listed in review_queue.csv rather than hidden.",
 ]
 
 

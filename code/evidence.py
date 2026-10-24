@@ -57,6 +57,16 @@ PREFIX_TO_SYSTEM = [
 PHONE_FIELDS = {"phone", "owner_phone", "requester_phone", "customer_phone"}
 
 
+# file_id -> {system_id: captured_at} for files that are full snapshots of a system.
+# A system covered by a snapshot that lacks a record is evidence that the record was absent.
+FILE_COVERAGE = {}
+
+
+def cover(file_id, system_id, when):
+    if system_id and when:
+        FILE_COVERAGE.setdefault(file_id, {})[system_id] = when
+
+
 def system_for(resource_id):
     for prefix, system in PREFIX_TO_SYSTEM:
         if resource_id.startswith(prefix):
@@ -117,6 +127,11 @@ def present_from_result(result):
 
 # ---------------------------------------------------------------- SQL snapshots
 
+def _header_capture(path):
+    m = re.search(r"Captured at: (\S+)", path.read_text(encoding="utf-8")[:500])
+    return m.group(1) if m else None
+
+
 def parse_sql(file_id, path):
     """Execute the snapshot in an in-memory SQLite database and read every row."""
     conn = sqlite3.connect(":memory:")
@@ -125,7 +140,11 @@ def parse_sql(file_id, path):
     tables = [r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")]
     for table in tables:
         if table == "snapshot_scope":
+            for origin, captured in conn.execute('SELECT origin_system, captured_at FROM "snapshot_scope"'):
+                cover(file_id, origin, parse_ts(captured))
             continue
+        if table.startswith("customer_profiles_"):          # primary / failover profile tables
+            cover(file_id, "account_service", parse_ts(_header_capture(path)))
         cols = [r[1] for r in conn.execute(f'PRAGMA table_info("{table}")')]
         for row in conn.execute(f'SELECT * FROM "{table}"'):
             rec = dict(zip(cols, row))
@@ -178,6 +197,8 @@ def parse_json(file_id, path, captured_at):
 
     elif "snapshots" in data:                            # customer_data_snapshot_bundle_*.json
         for snap in data["snapshots"]:
+            if snap.get("collection") == "customer_profiles":
+                cover(file_id, snap["data_store"], parse_ts(snap["captured_at"]))
             for rec in snap["records"]:
                 if "result" in rec and "system" in rec:  # lookup-history style record
                     add(rec["resource_id"], rec.get("recorded_at"), present_from_result(rec["result"]),

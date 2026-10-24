@@ -74,6 +74,8 @@ class Linker:
 
         self.activity = activity
         self.orphans_for_case = {}
+        self.link_method = {}
+        self.orphan_method = {}
         self.account_jobs = [a for a in activity
                              if a["target_system"] == "account_service" and a["event_type"] == "DELETE_RECORD"]
         self.account_for_case = {}
@@ -97,7 +99,7 @@ class Linker:
                 latest = {res: max(o.observed_at for o in self.by_resource[res]) for res in direct}
                 direct.sort(key=lambda res: (job_gap.get(res, float("inf")), -latest[res].timestamp()))
             if direct:
-                assigned[r["case_id"]] = direct[0]
+                assigned[r["case_id"]] = direct[0]; self.link_method[r["case_id"]] = "identifier match" if len(direct) == 1 else "identifier match, nearest deletion job among several"
                 continue
             lo, hi = r["reported_at"] - WINDOW_BEFORE, r["reported_at"] + WINDOW_AFTER
             in_window = [a for a in self.account_jobs
@@ -116,7 +118,7 @@ class Linker:
                 for case_id in list(candidates):
                     candidates[case_id] -= taken
                     if len(candidates[case_id]) == 1:
-                        assigned[case_id] = candidates.pop(case_id).pop()
+                        assigned[case_id] = candidates.pop(case_id).pop(); self.link_method.setdefault(case_id, "deletion job: unique candidate")
                         taken.add(assigned[case_id])
                         changed = True
 
@@ -129,12 +131,12 @@ class Linker:
                 ordered_cases = sorted(case_ids, key=lambda c: int(c.split("_")[1]))
                 ordered_accounts = sorted(cands, key=lambda a: job_time[a])
                 for case_id, account in zip(ordered_cases, ordered_accounts):
-                    assigned[case_id] = account
+                    assigned[case_id] = account; self.link_method[case_id] = "deletion job: tie-break by case order (review)"
                     candidates.pop(case_id)
         propagate()
         for case_id, cands in candidates.items():          # last resort: earliest job
             if cands:
-                assigned[case_id] = min(cands, key=lambda a: job_time[a])
+                assigned[case_id] = min(cands, key=lambda a: job_time[a]); self.link_method[case_id] = "deletion job: earliest of several (review)"
         self.account_for_case = assigned
         return assigned
 
@@ -173,7 +175,7 @@ class Linker:
                 for case_id in list(candidates):
                     candidates[case_id] -= taken
                     if len(candidates[case_id]) == 1:
-                        assigned[case_id] = candidates.pop(case_id).pop()
+                        assigned[case_id] = candidates.pop(case_id).pop(); self.orphan_method.setdefault(case_id, "anonymization job: unique candidate")
                         changed = True
                     elif not candidates[case_id]:
                         candidates.pop(case_id)
@@ -186,7 +188,7 @@ class Linker:
             if len(cands) == len(case_ids):
                 order = sorted(case_ids, key=lambda c: int(c.split("_")[1]))
                 for case_id, rid in zip(order, sorted(cands, key=lambda x: jobs[x])):
-                    assigned[case_id] = rid
+                    assigned[case_id] = rid; self.orphan_method[case_id] = "anonymization job: tie-break by case order (review)"
                     candidates.pop(case_id)
         propagate()
         self.orphans_for_case = {}

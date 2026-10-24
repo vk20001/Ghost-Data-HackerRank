@@ -85,6 +85,16 @@ same input always gives the same answer and every step can be traced to evidence
 | `code/main.py` | Entry point, output validation, usage report |
 | `code/evaluation/` | Scoring harness, custom cases, evaluation and usage reports |
 
+## Explainability outputs
+
+Every run also writes, next to `output.csv`:
+
+- `audit_trace.jsonl`: per case, the records linked to the person and **how** each link was
+  made, the state of each record at `audit_at`, the policy requirement, and the evidence id.
+- `review_queue.csv`: cases whose decision rests on a weaker link (a tie-break between
+  look-alike accounts, a missing account, or a COMPLETE verdict with an unproven record).
+  In production these would go to a human before any destructive remediation runs.
+
 ## Key decisions
 
 - **Claims vs proof.** Workflow statuses, job results and data-catalog links are claims.
@@ -92,6 +102,8 @@ same input always gives the same answer and every step can be traced to evidence
   dropped when the observed record shows only someone else's identifiers.
 - **Point in time.** A record's state is the latest observation at or before `audit_at`
   whose file was captured by then; later evidence never changes the answer.
+- **Proof of absence.** A deleted record leaves nothing to observe. A snapshot of the whole
+  system taken before `audit_at` that does not contain the record is the evidence cited.
 - **Linking without identifiers.** After deletion, an account lookup only says "404
   account_3136". The deletion job in `system_activity.csv` is the remaining link; it must
   fall in a short window before the reported status, and its result must agree with that
@@ -102,8 +114,8 @@ same input always gives the same answer and every step can be traced to evidence
 
 ## Results
 
-On the 32 labeled samples: status accuracy 100%, step F1 0.966, exact sequence match
-71.9%. Details, ablation, custom cases and remaining failures are in
+On the 32 labeled samples: status accuracy 100%, step F1 0.982, exact sequence match
+81.3%. Details, ablation, custom cases and remaining failures are in
 `code/evaluation/evaluation_report.md`.
 
 ## Repository notes

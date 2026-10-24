@@ -4,7 +4,7 @@
          -> assess each record against policy at audit_at -> plan steps
 """
 
-from evidence import parse_activity, parse_all
+from evidence import FILE_COVERAGE, parse_activity, parse_all
 from identities import IdentityIndex
 from intent import rule_based
 from linking import Linker
@@ -62,10 +62,21 @@ class AuditPipeline:
                 state.system_id = "account_service"
             records.append(state)
 
+        self._prove_absence(records, request["audit_at"])
         status, steps = plan(records)
-        trace = {"user_id": person["user_id"], "account": account,
-                 "records": [(r.resource_id, r.category, r.required, r.compliant, r.evidence_id)
-                             for r in records]}
+        case_id = request["case_id"]
+        trace = {
+            "case_id": case_id,
+            "user_id": person["user_id"],
+            "identifiers_searched": len(person["emails"]) + len(person["phones"]) + len(person["hashes"]) + 1,
+            "account": account,
+            "account_link": self.linker.link_method.get(case_id),
+            "anonymized_record_link": self.linker.orphan_method.get(case_id),
+            "status": status,
+            "records": [{"resource_id": r.resource_id, "category": r.category, "required_state": r.required,
+                         "compliant_at_audit": r.compliant, "finding": r.finding, "evidence_id": r.evidence_id,
+                         "observed_before_audit": r.observed} for r in records],
+        }
         return status, steps, trace
 
     def run(self, requests, intents=None):
@@ -75,3 +86,25 @@ class AuditPipeline:
             status, steps, _ = self.audit(r, is_del)
             rows.append({"case_id": r["case_id"], "deletion_status": status, "steps_json": to_json(steps)})
         return rows
+
+    def _prove_absence(self, records, audit_at):
+        """Cite a covering snapshot for records we never observed but must prove absent.
+
+        A deleted account usually leaves nothing to observe. If a snapshot of the whole
+        account system, taken at or before audit_at, is one of the files this case's own
+        evidence comes from (or the latest such snapshot when the case has none), and the
+        account is not in it, that snapshot proves the account was absent.
+        """
+        case_files = {r.evidence_id for r in records if r.evidence_id}
+        for r in records:
+            if r.observed or r.required != "ABSENT":
+                continue
+            covering = [(when, fid) for fid, systems in FILE_COVERAGE.items()
+                        for sys_id, when in systems.items()
+                        if sys_id == r.system_id and when <= audit_at
+                        and self.captured_at.get(fid, when) <= audit_at]
+            if not covering:
+                continue
+            same_case = [c for c in covering if c[1] in case_files]
+            when, fid = max(same_case or covering)
+            r.evidence_id, r.observed = fid, True
