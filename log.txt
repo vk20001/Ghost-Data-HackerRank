@@ -986,3 +986,26 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T20:14:00Z] Pull conflict on generated usage report; stop agent-side overwrites
+
+User Prompt (verbatim, secrets redacted):
+[git pull failed: local changes to code/evaluation/usage_report.md would be overwritten]
+[python3 code/main.py ran on the previous code: 26 vision records, 518 LLM intents, output.csv 353 INCOMPLETE / 155 COMPLETE / 10 NOT_APPLICABLE]
+[commit 8234732 "LLM cache and usage report from full run" created locally]
+[git push rejected: non-fast-forward]
+
+Agent Response Summary:
+The pull aborted because both sides had changed the generated usage_report.md (the agent's offline --no-llm runs had been rewriting and committing it), so the user's run used the old code and the push was rejected. Changed main.py so --no-llm runs no longer touch usage_report.md, which is only written by real model runs on the user's machine. Gave the user a merge that keeps the remote code, then a rerun to regenerate the report, and a push.
+
+Actions:
+* Edited code/main.py (usage report only written in LLM mode)
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none

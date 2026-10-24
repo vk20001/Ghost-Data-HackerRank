@@ -79,9 +79,10 @@ def main(use_llm=True):
         counts[r["deletion_status"]] = counts.get(r["deletion_status"], 0) + 1
     print(f"Wrote {OUTPUT.name}: {len(rows)} rows {counts}")
 
-    from evaluation.usage_report import write_report
-    write_report(n_requests=len(data["requests"]))
-    print("Updated code/evaluation/usage_report.md")
+    if use_llm:      # only a real model run is "the final run" the usage report describes
+        from evaluation.usage_report import write_report
+        write_report(n_requests=len(data["requests"]))
+        print("Updated code/evaluation/usage_report.md")
 
 
 if __name__ == "__main__":
