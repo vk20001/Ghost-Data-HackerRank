@@ -1191,3 +1191,24 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T20:36:00Z] Overfitting check via threshold sensitivity
+
+User Prompt (verbatim, secrets redacted):
+u sure solution is good nd not overfitting model?
+
+Agent Response Summary:
+Answered honestly that the system has no trained model but its hand-chosen heuristics were developed while reading the 32 samples, so there is no clean holdout. Measured the risk instead of asserting it: perturbed each tuned time window and compared all 518 test outputs with the baseline. No test status changed under any perturbation, the anonymized-record window changed nothing, and the account window changed the cited account in 24-25 rows (about 5%), all in cases already flagged for review. Added the sensitivity table and its interpretation to the evaluation report.
+
+Actions:
+* Sensitivity experiment over WINDOW_BEFORE and ORPHAN_WINDOW using cached model answers
+* Edited code/evaluation/report.py; regenerated code/evaluation/evaluation_report.md
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none

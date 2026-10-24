@@ -1,6 +1,6 @@
 # Evaluation Report
 
-Generated 2026-10-24T20:34:36+00:00 by `python3 code/evaluation/report.py`.
+Generated 2026-10-24T20:36:52+00:00 by `python3 code/evaluation/report.py`.
 
 ## How we evaluate
 
@@ -65,6 +65,19 @@ Every change below came from reading a per-case diff produced by `code/evaluatio
 | 9. Cite a covering snapshot as proof of absence | 100% | 0.982 | 81.3% | A sanity check on the 518 test outputs found 77 COMPLETE cases with an uncited verification step, which the contract forbids. A deleted account leaves nothing to observe, but a snapshot of the whole account system taken before audit_at that lacks the row proves it was absent. Uncited COMPLETE steps fell from 77 to 2. |
 
 Current submission configuration: status 100.0%, step F1 0.982, sequence 81.2%.
+
+## Overfitting check
+
+The rules were developed while reading the 32 samples, so there is no clean holdout. To check whether results hinge on hand-picked values, each tuned threshold was perturbed and the 518 test outputs were compared with the baseline (measured with the cached model answers):
+
+| Perturbation | Test rows changed | Test statuses changed | Sample step F1 |
+|---|---|---|---|
+| Account-job window 2h -> 3h | 25 / 518 | 0 | 0.982 (unchanged) |
+| Account-job window 2h -> 1.5h | 24 / 518 | 0 | 0.982 (unchanged) |
+| Anonymized-record window 45m -> 60m | 0 / 518 | 0 | 0.982 (unchanged) |
+| Anonymized-record window 45m -> 35m | 0 / 518 | 0 | 0.982 (unchanged) |
+
+Statuses never move, and the anonymized-record window is not knife-edge. The account window changes which account is cited in about 5% of cases, all of them cases that already depend on a tie-break and are listed in `review_queue.csv`. Status and policy decisions come from `deletion_rules.csv` and observed evidence, not from sample-fitted values; the step-level detail of tie-break cases is the part most likely to score lower on hidden cases.
 
 ## Remaining failures
 
