@@ -531,3 +531,24 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T19:02:00Z] Claude GitHub app not installed; deliver commits as a git bundle
+
+User Prompt (verbatim, secrets redacted):
+see
+[Screenshot: GitHub Settings > Applications > Installed GitHub Apps, listing ChatGPT Codex Connector, Databricks, dbt Cloud, GitHub Learning Lab, Netlify; Claude is not installed]
+
+Agent Response Summary:
+The Claude GitHub app is only authorized, not installed, which explains why only public repos are visible. Rather than spend contest time on app installation, packaged all local commits into a git bundle (a single file holding the commit history) and sent it, with commands to verify the base commit, pull the bundle into main, and push to the user's private repo. History and authorship are preserved.
+
+Actions:
+* git bundle create ghost-data-updates.bundle <base>..main
+* SendUserFile ghost-data-updates.bundle
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
