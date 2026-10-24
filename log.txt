@@ -356,3 +356,25 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T14:29:00Z] Add a backup LLM provider: failover design
+
+User Prompt (verbatim, secrets redacted):
+I dont exactly trust gemini api bcoz it gets exhausted too early have tried nd tested it before 
+
+I suggest we take both gemini nd grok u knw like setting a backup also if one API does not work?
+
+Agent Response Summary:
+Agreed with the failover idea but pushed back on Grok as the backup because its API has no confirmed free tier. Proposed Groq (GroqCloud, free per-model daily limits, OpenAI-compatible) as the second provider, with a deterministic keyword classifier as the last fallback. Explained the provider-abstraction pattern: one call interface, ordered provider chain, every response cached, and the answering provider recorded for the usage report.
+
+Actions:
+* WebSearch: Groq API free tier limits
+* WebFetch: KDnuggets free LLM API providers 2026
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
