@@ -56,9 +56,13 @@ def main(use_llm=True):
     print(f"  {len(pipe.observations)} observations")
 
     print("Classifying request intent...")
-    decisions = classify_all(data["requests"], use_llm=use_llm)
+    # The 32 labeled samples are classified in the same run so the evaluation harness
+    # can score the exact model answers that the submission used.
+    decisions = classify_all(data["requests"] + data["sample_requests"], use_llm=use_llm)
     sources = {}
-    for _, src in decisions.values():
+    for cid, (_, src) in decisions.items():
+        if cid not in {r["case_id"] for r in data["requests"]}:
+            continue
         sources[src] = sources.get(src, 0) + 1
     print(f"  decided by: {sources}")
     intents = {cid: is_del for cid, (is_del, _) in decisions.items()}
@@ -75,9 +79,10 @@ def main(use_llm=True):
         counts[r["deletion_status"]] = counts.get(r["deletion_status"], 0) + 1
     print(f"Wrote {OUTPUT.name}: {len(rows)} rows {counts}")
 
-    from evaluation.usage_report import write_report
-    write_report(n_requests=len(data["requests"]))
-    print("Updated code/evaluation/usage_report.md")
+    if use_llm:      # only a real model run is "the final run" the usage report describes
+        from evaluation.usage_report import write_report
+        write_report(n_requests=len(data["requests"]))
+        print("Updated code/evaluation/usage_report.md")
 
 
 if __name__ == "__main__":

@@ -937,3 +937,75 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T20:05:00Z] Runtime estimate for the full run
+
+User Prompt (verbatim, secrets redacted):
+how much time will it take
+
+Agent Response Summary:
+Gave a reasoned estimate rather than a measured figure: about 36 model calls (15 vision, 21 intent) at typically several seconds each, so roughly 3 to 10 minutes, plus up to about a minute per rate-limited call because of the 20s/40s backoff; the deterministic audit itself takes seconds. Noted reruns are near-instant because answers are cached.
+
+Actions:
+* No files changed besides this log entry
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
+
+## [2026-10-24T20:11:00Z] First full LLM run succeeded; make evaluation reproducible from the cache
+
+User Prompt (verbatim, secrets redacted):
+[git pull output]
+Loaded 518 requests, 94 evidence files.
+Reading screenshots and PDFs with the vision model...
+  26 records extracted, 0 files skipped
+Building identity index, evidence table and links...
+  3079 observations
+Classifying request intent...
+  decided by: {'llm': 518}
+Wrote output.csv: 518 rows {'INCOMPLETE': 353, 'COMPLETE': 155, 'NOT_APPLICABLE': 10}
+Updated code/evaluation/usage_report.md
+
+Agent Response Summary:
+The full run worked on the user's machine: all 15 images and PDFs were read (26 records), all 518 intents came from the LLM with no fallback, and the 10 non-deletion requests were identified. Added a cache-only mode (LLM_CACHE_ONLY=1) so the evaluation harness replays the exact cached model answers without spending quota, and made main.py classify the 32 samples in the same run so they are scored with the same model answers. Asked the user to rerun and push the cache and usage report so the agent can evaluate the LLM-backed output.
+
+Actions:
+* Edited code/llm.py (cache-only mode), code/evaluation/main.py (evaluate_samples with cached models), code/main.py (classify samples too)
+* Ran python3 code/main.py --no-llm
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
+
+## [2026-10-24T20:14:00Z] Pull conflict on generated usage report; stop agent-side overwrites
+
+User Prompt (verbatim, secrets redacted):
+[git pull failed: local changes to code/evaluation/usage_report.md would be overwritten]
+[python3 code/main.py ran on the previous code: 26 vision records, 518 LLM intents, output.csv 353 INCOMPLETE / 155 COMPLETE / 10 NOT_APPLICABLE]
+[commit 8234732 "LLM cache and usage report from full run" created locally]
+[git push rejected: non-fast-forward]
+
+Agent Response Summary:
+The pull aborted because both sides had changed the generated usage_report.md (the agent's offline --no-llm runs had been rewriting and committing it), so the user's run used the old code and the push was rejected. Changed main.py so --no-llm runs no longer touch usage_report.md, which is only written by real model runs on the user's machine. Gave the user a merge that keeps the remote code, then a rerun to regenerate the report, and a push.
+
+Actions:
+* Edited code/main.py (usage report only written in LLM mode)
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none

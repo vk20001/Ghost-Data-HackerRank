@@ -167,6 +167,8 @@ def ask_llm(task, prompt, attachments=None, vision=False, retries=2):
                           "output_tokens": entry.get("output_tokens", 0), "cached": True})
         return entry["response"]
 
+    if os.environ.get("LLM_CACHE_ONLY") == "1":
+        raise LLMUnavailable("cache-only mode and no cached answer")
     errors = []
     for name, call in PROVIDERS:
         for attempt in range(retries + 1):
