@@ -336,3 +336,23 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T14:26:00Z] Choose a free LLM API (Gemini vs Grok)
+
+User Prompt (verbatim, secrets redacted):
+Yes i can but suggest me free APi key which can i take i think gemini or grok will do right?
+
+Agent Response Summary:
+Researched current free options. Recommended the Gemini API free tier (Flash and Flash-Lite models, multimodal) over xAI Grok, whose API is pay-as-you-go with only unconfirmed promotional credits. Flagged that reported free-tier daily limits are low (around 20/day for Flash, 500/day for Flash-Lite per third-party reports), so the design must batch intent classification and cache all model outputs. Noted free-tier prompts may be used for training, which is acceptable here because the dataset is fictional.
+
+Actions:
+* WebSearch: Gemini API free tier limits 2026; xAI Grok API free credits 2026
+* WebFetch: agentdeals.dev Gemini pricing changes; apidog.com Grok free usage
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
