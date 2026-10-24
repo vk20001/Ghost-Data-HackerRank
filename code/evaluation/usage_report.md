@@ -1,6 +1,6 @@
 # Token Usage and Cost Report
 
-Generated 2026-10-24T20:16:06+00:00 by `python3 code/main.py`, covering the full-dataset run that wrote `output.csv` (518 requests).
+Generated 2026-10-24T20:26:03+00:00 by `python3 code/main.py`, covering the full-dataset run that wrote `output.csv` (518 requests).
 
 Model calls happen only at the unstructured edges: batched intent classification (25 requests per call) and one vision extraction per screenshot or PDF. Linking, policy decisions and step planning are deterministic Python and use no tokens.
 
@@ -8,7 +8,7 @@ Model calls happen only at the unstructured edges: batched intent classification
 
 | Provider | Model | Tasks | Calls | Live / cached | Input tokens | Output tokens | Total tokens | Est. cost (USD) |
 |---|---|---|---|---|---|---|---|---|
-| google-gemini | gemini-3.5-flash-lite | intent_classification | 22 | 22 / 0 | 33,864 | 20,241 | 54,105 | 0.00 (free tier) |
+| google-gemini | gemini-3.5-flash-lite | intent_classification | 22 | 0 / 22 | 33,864 | 20,241 | 54,105 | 0.00 (free tier) |
 | google-gemini | gemini-3.8-flash | vision_extraction | 15 | 0 / 15 | 21,818 | 3,894 | 25,712 | 0.00 (free tier) |
 
 ## Overall
