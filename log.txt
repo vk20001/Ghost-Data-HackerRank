@@ -293,3 +293,22 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T14:23:00Z] User answers identity-linking question; clarify the three link routes
+
+User Prompt (verbatim, secrets redacted):
+By checking history or some unique hash that must have been assign to the user?
+
+Agent Response Summary:
+Confirmed half the answer and made it precise: the support ticket links through history (old email in user_audit_log.csv maps to user_29), while the analytics record links through customer_reference, which is the stable internal user_id, not a hash. Verified in the data that email_hash is SHA-256 of the email, making hash matching a third link route. Summarized the three join keys.
+
+Actions:
+* python check: email_hash == sha256(email) for user_29 (True)
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
