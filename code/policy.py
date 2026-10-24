@@ -62,6 +62,8 @@ def category_for(resource_id, observations):
         return "ANALYTICS_PROFILE"
     if resource_id.startswith("support_"):
         if (rtype == "SUPPORT_ATTACHMENT" or "file_name" in attrs or "file" in attrs
+                or "attachment" in str(attrs.get("details", "")).lower()
+                or "attachment" in str(attrs.get("_artifact", "")).lower()
                 or attrs.get("_collection") == "ticket_attachments"
                 or "attachment" in str(attrs.get("event", ""))):
             return "SUPPORT_ATTACHMENT"

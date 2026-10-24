@@ -47,7 +47,7 @@ MIME = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".pdf"
 RESOURCE_RE = re.compile(r"^[a-z_]+_\d+$")
 
 
-def to_observations(file_id, captured_at, extracted):
+def to_observations(file_id, captured_at, extracted, artifact=""):
     observations = []
     for rec in extracted.get("records", []):
         rid = (rec.get("resource_id") or "").strip()
@@ -55,7 +55,7 @@ def to_observations(file_id, captured_at, extracted):
             continue
         status = str(rec.get("status") or "unknown").lower()
         present = False if status in {"deleted", "not_found"} else (None if status == "unknown" else True)
-        attrs = {"_source": "vision", "status": status}
+        attrs = {"_source": "vision", "status": status, "_artifact": artifact}
         for flag in ("enabled", "restore_allowed", "available"):
             if rec.get(flag) is not None:
                 attrs[flag] = str(bool(rec[flag])).lower()
@@ -86,7 +86,7 @@ def parse_media(evidence_files, dataset_dir=DATASET_DIR, log=print):
         try:
             extracted = ask_llm("vision_extraction", VISION_PROMPT,
                                 attachments=[(path.name, path.read_bytes(), mime)], vision=True)
-            observations += to_observations(row["file_id"], row["captured_at"], extracted)
+            observations += to_observations(row["file_id"], row["captured_at"], extracted, path.name)
         except LLMUnavailable as e:
             failed.append(row["file_id"])
             log(f"  vision {row['file_id']} ({path.name}): skipped, {str(e)[:120]}")

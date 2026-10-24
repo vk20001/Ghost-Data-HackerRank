@@ -54,10 +54,23 @@ class Linker:
             for k in subject_keys(person):
                 key_to_user[k] = uid
         self.resource_users = defaultdict(set)
+        catalog_users = defaultdict(set)
         for o in observations:
+            target = catalog_users if o.attrs.get("_link_only") else self.resource_users
             for k in o.identifiers:
                 if k in key_to_user:
-                    self.resource_users[o.resource_id].add(key_to_user[k])
+                    target[o.resource_id].add(key_to_user[k])
+
+        # A data-catalog entry is metadata, i.e. a claim. If the record itself was
+        # observed showing direct identifiers and none of them belong to the cataloged
+        # person, the observed record wins and the catalog link is ignored.
+        for rid, users in catalog_users.items():
+            shown = {k for o in self.by_resource.get(rid, []) if not o.attrs.get("_link_only")
+                     for k in o.identifiers if "@" in k or k.startswith("phone:")}
+            for uid in users:
+                own = subject_keys(index.users[uid])
+                if not shown or shown & own:
+                    self.resource_users[rid].add(uid)
 
         self.activity = activity
         self.orphans_for_case = {}

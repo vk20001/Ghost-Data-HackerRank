@@ -1049,3 +1049,28 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T20:21:00Z] User pushed the LLM cache; evaluate with real model answers and fix two vision issues
+
+User Prompt (verbatim, secrets redacted):
+done
+
+[git pull merged log.txt; git push e9cb4eb..4484df7 main -> main]
+
+Agent Response Summary:
+Pulled the user's cache and usage report (37 model calls, 79,817 tokens, $0 on free tiers). Scored the samples by replaying the cached model answers: status accuracy rose to 100% with LLM intent. Checked every case the vision step changed: each maps to a screenshot showing a remaining record tied to the requester by a data-catalog link (an open export, a live admin profile, a search entry, an enabled connector, identifiable analytics, an unredacted ticket). Fixed two issues found in the process: a support attachment read from a PDF was treated as a message (now categorized as an attachment using the artifact and catalog details), and a catalog link claiming marketing_001 belonged to user_09 while the screenshot shows a different person (catalog links are now treated as claims and dropped when the observed record shows only someone else's identifiers). Sample scores: status 100%, step F1 about 0.97, sequence 72%.
+
+Actions:
+* git pull (user's cache and usage report)
+* Edited code/policy.py, code/vision.py, code/linking.py
+* Ran python3 code/evaluation/main.py with LLM_CACHE_ONLY replay; compared outputs with and without vision observations
+* Viewed dataset/evidence/images/marketing_profile_console.png
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
