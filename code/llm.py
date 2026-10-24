@@ -31,7 +31,7 @@ USAGE_FILE = CACHE_DIR / "usage_log.jsonl"
 
 DEFAULT_GEMINI_MODEL = "gemini-3.5-flash-lite"        # text: cheap, highest free daily quota
 DEFAULT_GEMINI_VISION_MODEL = "gemini-3.8-flash"     # images/PDFs: stronger reader, ~15 calls total
-DEFAULT_GROQ_MODEL = "llama-3.3-70b-versatile"
+DEFAULT_GROQ_MODEL = "openai/gpt-oss-120b"        # from the account's Groq model list; no Groq vision model is used
 
 
 def load_dotenv(path=REPO_ROOT / ".env"):
