@@ -29,8 +29,8 @@ CACHE_DIR = CODE_DIR / "cache"
 CACHE_FILE = CACHE_DIR / "llm_cache.json"
 USAGE_FILE = CACHE_DIR / "usage_log.jsonl"
 
-DEFAULT_GEMINI_MODEL = "gemini-flash-lite-latest"
-DEFAULT_GEMINI_VISION_MODEL = "gemini-flash-latest"
+DEFAULT_GEMINI_MODEL = "gemini-3.5-flash-lite"        # text: cheap, highest free daily quota
+DEFAULT_GEMINI_VISION_MODEL = "gemini-3.8-flash"     # images/PDFs: stronger reader, ~15 calls total
 DEFAULT_GROQ_MODEL = "llama-3.3-70b-versatile"
 
 
@@ -199,6 +199,13 @@ def ask_llm(task, prompt, attachments=None, vision=False, retries=2):
 
 def list_models():
     """Print the model IDs each configured key can use, to pick GEMINI_MODEL / GROQ_MODEL."""
+    try:
+        _list_models()
+    except urllib.error.HTTPError as e:
+        print(f"HTTP {e.code} from {e.url.split('/')[2]}: check that key in .env")
+
+
+def _list_models():
     if os.environ.get("GEMINI_API_KEY"):
         req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200",
                                      headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"]})
