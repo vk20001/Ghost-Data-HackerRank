@@ -77,11 +77,35 @@ def diff(pred_row, exp_row):
     return "\n".join(lines)
 
 
-if __name__ == "__main__":
+def evaluate_samples(use_cached_models=True):
+    """Run the full pipeline on the 32 labeled samples.
+
+    With use_cached_models, vision and intent answers come from the LLM cache only
+    (LLM_CACHE_ONLY=1), so evaluation is reproducible and never spends quota; anything
+    not cached falls back to the deterministic path.
+    """
+    import os
     from pipeline import AuditPipeline
 
-    pipe = AuditPipeline()
-    rows = pipe.run(pipe.data["sample_requests"])
+    media_obs, intents = [], None
+    if use_cached_models:
+        os.environ["LLM_CACHE_ONLY"] = "1"
+        from loaders import load_all
+        from vision import parse_media
+        from intent import classify_all
+        data = load_all()
+        media_obs, _ = parse_media(data["evidence_files"], log=lambda *a: None)
+        decisions = classify_all(data["sample_requests"], log=lambda *a: None)
+        intents = {c: d for c, (d, _) in decisions.items()}
+        pipe = AuditPipeline(data, extra_observations=media_obs)
+    else:
+        pipe = AuditPipeline()
+    rows = pipe.run(pipe.data["sample_requests"], intents)
+    return pipe, rows
+
+
+if __name__ == "__main__":
+    pipe, rows = evaluate_samples(use_cached_models="--no-llm" not in sys.argv)
     result = score(rows, pipe.data["sample_output"])
     print(json.dumps({k: v for k, v in result.items() if k != "failures"}, indent=2))
     print(f"\nfailing cases ({len(result['failures'])}):")

@@ -56,9 +56,13 @@ def main(use_llm=True):
     print(f"  {len(pipe.observations)} observations")
 
     print("Classifying request intent...")
-    decisions = classify_all(data["requests"], use_llm=use_llm)
+    # The 32 labeled samples are classified in the same run so the evaluation harness
+    # can score the exact model answers that the submission used.
+    decisions = classify_all(data["requests"] + data["sample_requests"], use_llm=use_llm)
     sources = {}
-    for _, src in decisions.values():
+    for cid, (_, src) in decisions.items():
+        if cid not in {r["case_id"] for r in data["requests"]}:
+            continue
         sources[src] = sources.get(src, 0) + 1
     print(f"  decided by: {sources}")
     intents = {cid: is_del for cid, (is_del, _) in decisions.items()}

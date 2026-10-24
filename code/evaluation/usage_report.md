@@ -1,6 +1,6 @@
 # Token Usage and Cost Report
 
-Generated 2026-10-24T19:49:09+00:00 by `python3 code/main.py`, covering the full-dataset run that wrote `output.csv` (518 requests).
+Generated 2026-10-24T20:12:12+00:00 by `python3 code/main.py`, covering the full-dataset run that wrote `output.csv` (518 requests).
 
 Model calls happen only at the unstructured edges: batched intent classification (25 requests per call) and one vision extraction per screenshot or PDF. Linking, policy decisions and step planning are deterministic Python and use no tokens.
 
