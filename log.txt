@@ -605,3 +605,25 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T19:06:00Z] User confused: bundle not found in Downloads
+
+User Prompt (verbatim, secrets redacted):
+[Screenshot: WSL terminal; `ls /mnt/c/Users/*/Downloads/ | grep bundle` returns nothing]
+nothing 
+
+whats happening i dont understand
+
+Agent Response Summary:
+Explained in plain terms: the bundle exists only in the chat as a file card until the user downloads it, and the search found nothing because it was never downloaded. Gave three short steps: click the file card to download, find it with a broad search under /mnt/c/Users, then pull it by full path.
+
+Actions:
+* No files changed besides this log entry
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
