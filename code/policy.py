@@ -142,6 +142,9 @@ def assess(resource_id, observations, policy, audit_at, captured_at):
     else:
         required = ACTION_TARGET[policy[category]]
 
+    # Link-only evidence (e.g. a catalog entry) ties a record to a person but says
+    # nothing about its current state, so it never counts as the latest state.
+    usable = [o for o in usable if o.present is not None]
     if not usable:
         return RecordState(resource_id, system_id, category, required, True, None, "", False)
 

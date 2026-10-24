@@ -355,3 +355,37 @@ if __name__ == "__main__":
     print("\npresence:", dict(Counter(o.present for o in obs)))
     no_ids = [o for o in obs if not o.identifiers]
     print("observations with no identifiers:", len(no_ids))
+
+
+# ---------------------------------------------------------------- activity stream
+
+def parse_activity(activity):
+    """Turn the few activity events that prove a state (not just claim one) into observations.
+
+    Most activity rows are workflow claims ("deletion SUCCESS") and are ignored as proof.
+    These are kept because they record an observed fact, cited by activity_id:
+    - LINK_RESOURCE_IDENTITY: the data catalog tied a resource to an email and user_id
+    - CHECK_DATA_FLOW: a connector status check found the flow still enabled
+    - CHECK_RESTORE_ACCESS: a check found an archive can still be restored
+    - SYNC_RECORD / RESTORE_BACKUP "repopulated": a process recreated a downstream record
+    """
+    observations = []
+    for a in activity:
+        rid, details = a["resource_id"], a["details"]
+        if not system_for(rid):
+            continue
+        attrs = {"event_type": a["event_type"], "details": details, "_source": "activity"}
+        present = None
+        if a["event_type"] == "LINK_RESOURCE_IDENTITY":
+            attrs["_link_only"] = True
+        elif a["event_type"] == "CHECK_DATA_FLOW" and "remains enabled" in details:
+            present, attrs["enabled"] = True, "true"
+        elif a["event_type"] == "CHECK_RESTORE_ACCESS" and "can still be restored" in details:
+            present, attrs["restore_allowed"] = True, "true"
+        elif "repopulated" in details:
+            present = True
+        else:
+            continue
+        observations.append(Observation(a["activity_id"], system_for(rid), rid, a["event_time"],
+                                        present, "activity", attrs, extract_identifiers(details)))
+    return observations

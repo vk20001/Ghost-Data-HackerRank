@@ -820,3 +820,25 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T19:45:00Z] Build the AI layer: LLM failover, intent, vision, activity evidence, entry point
+
+User Prompt (verbatim, secrets redacted):
+yes i have
+
+Agent Response Summary:
+With the user's keys in a local .env, built the AI layer around the deterministic core. code/llm.py: one ask_llm() call with Gemini then Groq failover, 429 backoff, a disk cache keyed on the prompt and attachments, and per-call token logging (standard library only). code/intent.py: batched LLM intent classification (25 requests per call) with the keyword rules as per-batch fallback. code/vision.py: multimodal extraction of the 11 screenshots and 4 PDFs into the same Observation shape. Added activity-derived evidence (catalog links, connector and restore checks, repopulation events) and linking of anonymized analytics through their anonymization jobs, restricted to fully remediated cases. code/main.py validates the output contract and writes output.csv plus code/evaluation/usage_report.md. Offline run (--no-llm) produces 518 valid rows; sample scores now status 97%, step F1 0.96, sequence 69%. The LLM paths cannot be exercised from this workspace (no external API access), so the user must run them locally.
+
+Actions:
+* Created code/llm.py, code/vision.py, code/main.py, code/evaluation/usage_report.py, code/evaluation/__init__.py
+* Edited code/intent.py, code/evidence.py, code/linking.py, code/pipeline.py, code/policy.py
+* Ran python3 code/evaluation/main.py and python3 code/main.py --no-llm
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none

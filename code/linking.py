@@ -32,6 +32,7 @@ STATUS_TO_JOB_RESULT = {
 }
 WINDOW_BEFORE = timedelta(hours=2)
 WINDOW_AFTER = timedelta(minutes=30)
+ORPHAN_WINDOW = timedelta(minutes=45)
 
 
 def subject_keys(person):
@@ -58,6 +59,8 @@ class Linker:
                 if k in key_to_user:
                     self.resource_users[o.resource_id].add(key_to_user[k])
 
+        self.activity = activity
+        self.orphans_for_case = {}
         self.account_jobs = [a for a in activity
                              if a["target_system"] == "account_service" and a["event_type"] == "DELETE_RECORD"]
         self.account_for_case = {}
@@ -120,4 +123,60 @@ class Linker:
             if cands:
                 assigned[case_id] = min(cands, key=lambda a: job_time[a])
         self.account_for_case = assigned
+        return assigned
+
+
+    def assign_orphans(self, requests, prefix="analytics_", event_type="ANONYMIZE_RECORD"):
+        """Link records whose identifiers were already removed (e.g. anonymized analytics).
+
+        After anonymization nothing in the record names the person; the only trace is
+        the policy job that anonymized it. Same reasoning as accounts: the job ran inside
+        the request's window, the record is not tied to anyone else, and each record
+        belongs to one case. Ties are broken by pairing cases in case order with
+        jobs in job order, the same deterministic rule used for accounts.
+        """
+        jobs = {}
+        for a in self.activity:
+            rid = a["resource_id"]
+            if (a["event_type"] == event_type and rid.startswith(prefix)
+                    and not self.resource_users.get(rid) and self.by_resource.get(rid)):
+                jobs.setdefault(rid, a["event_time"])
+        candidates = {}
+        for r in requests:
+            person = self.index.resolve(r["email"])
+            if any(res.startswith(prefix) for res in self.resources_for(person)):
+                continue
+            lo, hi = r["reported_at"] - ORPHAN_WINDOW, r["reported_at"]
+            cands = {rid for rid, t in jobs.items() if lo <= t <= hi}
+            if cands:
+                candidates[r["case_id"]] = cands
+        assigned = {}
+
+        def propagate():
+            changed = True
+            while changed:
+                changed = False
+                taken = set(assigned.values())
+                for case_id in list(candidates):
+                    candidates[case_id] -= taken
+                    if len(candidates[case_id]) == 1:
+                        assigned[case_id] = candidates.pop(case_id).pop()
+                        changed = True
+                    elif not candidates[case_id]:
+                        candidates.pop(case_id)
+
+        propagate()
+        groups = {}
+        for case_id, cands in candidates.items():
+            groups.setdefault(frozenset(cands), []).append(case_id)
+        for cands, case_ids in groups.items():
+            if len(cands) == len(case_ids):
+                order = sorted(case_ids, key=lambda c: int(c.split("_")[1]))
+                for case_id, rid in zip(order, sorted(cands, key=lambda x: jobs[x])):
+                    assigned[case_id] = rid
+                    candidates.pop(case_id)
+        propagate()
+        self.orphans_for_case = {}
+        for case_id, rid in assigned.items():
+            self.orphans_for_case.setdefault(case_id, []).append(rid)
         return assigned

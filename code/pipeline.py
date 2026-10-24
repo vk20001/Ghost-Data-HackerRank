@@ -4,7 +4,7 @@
          -> assess each record against policy at audit_at -> plan steps
 """
 
-from evidence import parse_all
+from evidence import parse_activity, parse_all
 from identities import IdentityIndex
 from intent import rule_based
 from linking import Linker
@@ -18,12 +18,20 @@ class AuditPipeline:
         self.data = data or load_all()
         self.index = IdentityIndex(self.data["identities"], self.data["audit_log"])
         observations, _ = parse_all(self.data["evidence_files"])
-        self.observations = observations + (extra_observations or [])
+        self.observations = observations + parse_activity(self.data["activity"]) + (extra_observations or [])
         self.captured_at = {f["file_id"]: f["captured_at"] for f in self.data["evidence_files"]}
+        self.captured_at.update({a["activity_id"]: a["event_time"] for a in self.data["activity"]})
         self.policy = load_policy(self.data["rules"])
         self.linker = Linker(self.index, self.observations, self.data["activity"])
         # Account linking needs every request at once (cases compete for accounts).
-        self.linker.assign_accounts(self.data["requests"] + self.data["sample_requests"])
+        all_requests = self.data["requests"] + self.data["sample_requests"]
+        self.linker.assign_accounts(all_requests)
+        # Anonymized records with no identifiers left can only belong to a case whose
+        # remediation actually ran to the end, so only fully compliant deletion cases
+        # compete for them (first pass decides which cases those are).
+        finished = [r for r in all_requests
+                    if rule_based(r["request_text"]) and self.audit(r, True)[0] == "COMPLETE"]
+        self.linker.assign_orphans(finished)
 
     def audit(self, request, is_deletion=None):
         """Audit one request. Returns (status, steps, trace) where trace explains the decision."""
@@ -39,9 +47,13 @@ class AuditPipeline:
         resources = {r for r in self.linker.resources_for(person) if not r.startswith("account_")}
         if account:
             resources.add(account)
+        resources |= set(self.linker.orphans_for_case.get(request["case_id"], []))
 
         records = []
         for rid in sorted(resources):
+            obs = self.linker.by_resource.get(rid, [])
+            if rid != account and not any(o.present is not None for o in obs):
+                continue        # only a catalog link, never an observed record
             state = assess(rid, self.linker.by_resource.get(rid, []), self.policy,
                            request["audit_at"], self.captured_at)
             if state is None:
