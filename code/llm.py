@@ -35,7 +35,7 @@ DEFAULT_GROQ_MODEL = "llama-3.3-70b-versatile"
 
 
 def load_dotenv(path=REPO_ROOT / ".env"):
-    """Minimal .env reader: KEY=value lines, no export, no quotes needed."""
+    """Minimal .env reader: KEY=value lines; quotes and trailing # comments are ignored."""
     if not path.exists():
         return
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -43,7 +43,10 @@ def load_dotenv(path=REPO_ROOT / ".env"):
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, value = line.split("=", 1)
-        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+        value = value.split(" #", 1)[0].strip().strip('"').strip("'")
+        # .env wins over the shell: a stale key exported in ~/.bashrc must not
+        # silently override the one the user just put in .env.
+        os.environ[key.strip()] = value
 
 
 load_dotenv()
