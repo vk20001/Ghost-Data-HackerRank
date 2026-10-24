@@ -1,0 +1,6597 @@
+{
+ "04b138fd1598bef17d565095140f1fe23bbc8cb9e9940c0b0df7c85c0e041415": {
+  "input_tokens": 1558,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 679,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_201",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_202",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_203",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_204",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_205",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_206",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_207",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_208",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_209",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_210",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_211",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_212",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_213",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_214",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_215",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_216",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_217",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_218",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_219",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_220",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_221",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_222",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_223",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_224",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_225",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "07846771b726f3d38e14e429a5b91ae98e7bc05b1c9af90522e5be61d4fbe23f": {
+  "input_tokens": 1522,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 962,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_51",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_52",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_53",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_54",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_55",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_56",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_57",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_58",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_59",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_60",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_61",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_62",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_63",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_64",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_65",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_66",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_67",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_68",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_69",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_70",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_71",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_72",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_73",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_74",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_75",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "07b45fdb9c89d59be46fa326eec91f654005a542112656e1b91224b8a9c661f3": {
+  "input_tokens": 1534,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_383",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_384",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_385",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_386",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_387",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_388",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_389",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_390",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_391",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_392",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_393",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_394",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_395",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_396",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_397",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_398",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_399",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_400",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_401",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_402",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_403",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_404",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_405",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_406",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_407",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "176dd558eeb03976df9cf9263bd6db0c180673a87e8b521438a161b66af261ca": {
+  "input_tokens": 1563,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_408",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_409",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_410",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_411",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_412",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_413",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_414",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_415",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_416",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_417",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_418",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_419",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_420",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_421",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_422",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_423",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_424",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_425",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_426",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_427",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_428",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_429",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_430",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_431",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_432",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "191927402eb47ed7a84bd1826eb42cb7b5ab2b587e95f13cf1179992c131c73b": {
+  "input_tokens": 1568,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_333",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_334",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_335",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_336",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_337",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_338",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_339",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_340",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_341",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_342",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_343",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_344",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_345",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_346",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_347",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_348",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_349",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_350",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_351",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_352",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_353",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_354",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_355",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_356",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_357",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "1a1c260d057a34e8a8ee48b3d4c63798cb54f66bbefcbcf47814701f282401d2": {
+  "input_tokens": 1480,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 669,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "delivery_confirmation_19.pdf",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "delivery_confirmation_20.pdf",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "return_label_4821.pdf",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "return_label_4876.pdf",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "invoice_NS-10493.pdf",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "parcel_damage_7713.jpg",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "customer_export_2026-02-10.zip",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "customer_export_2026-02-12.zip",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "1a82475f5b190404bab6fe2595fe3161cf7ff015fbdc9d64da0e5aa9d9ec163f": {
+  "input_tokens": 1480,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 434,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "bluepeakco@outlook.com"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "backup_9291",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [
+      "miller.logistics@company.com"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "backup_9288",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [
+      "areed1433@gmail.com"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "backup_9287",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [
+      "summit-retail@company.com"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "backup_9286",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "backup_9281",
+     "restore_allowed": null,
+     "status": "unknown",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "1ee8b70f573914d34a9c8e513e530fa25c50e207f537dccc9c5e45502709bbdc": {
+  "input_tokens": 1527,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 962,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_58",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_59",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_60",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_61",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_62",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_63",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_64",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_65",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_66",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_67",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_68",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_69",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_70",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_71",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_72",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_73",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_74",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_75",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_76",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_77",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_78",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_79",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_80",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_81",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_82",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "21656861e4162d4d9437c0fad476f44fb37e73a7dd1311f421df684ffe1b5e43": {
+  "input_tokens": 1506,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 87,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "sj.park@naver.com"
+     ],
+     "enabled": null,
+     "names": [
+      "Soo-jin Park"
+     ],
+     "phones": [
+      "+82 10-5837-9451"
+     ],
+     "resource_id": "marketing_001",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "28b15936dd10cdc69a1b9f31c0b9de3ffe25c35cd68653609d9d2d53783cd951": {
+  "input_tokens": 1478,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 381,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "ORD-20264118",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_08"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "ORD-20264207",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_12"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "ORD-20264319",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_17"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "ORD-20264402",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_21"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "ORD-20264511",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_24"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "ORD-20264600",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_29"
+     ]
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "2bb54aeabac23a3a832d5a272b1a9307fa732ec69afe16135167aea718d8754c": {
+  "input_tokens": 1559,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_233",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_234",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_235",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_236",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_237",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_238",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_239",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_240",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_241",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_242",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_243",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_244",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_245",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_246",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_247",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_248",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_249",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_250",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_251",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_252",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_253",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_254",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_255",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_256",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_257",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "33fa20d9e897d5d196a1d7974259bc73aa0e5987114e1d3181c2465086ffafa3": {
+  "input_tokens": 1550,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 731,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_226",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_227",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_228",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_229",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_230",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_231",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_232",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_233",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_234",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_235",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_236",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_237",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_238",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_239",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_240",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_241",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_242",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_243",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_244",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_245",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_246",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_247",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_248",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_249",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_250",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "347638cc4a77c98191ce229274631cff8ce06d28e200e8b852e05f02b4ea6d0e": {
+  "input_tokens": 1553,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_176",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_177",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_178",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_179",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_180",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_181",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_182",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_183",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_184",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_185",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_186",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_187",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_188",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_189",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_190",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_191",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_192",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_193",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_194",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_195",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_196",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_197",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_198",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_199",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_200",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "3642a1e7bde12f8f7c04d20971c3ba48e3b9595ce96e3285bd4f4f332134fdc1": {
+  "input_tokens": 1025,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 500,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_533",
+     "is_deletion": false,
+     "request_type": "correction"
+    },
+    {
+     "case_id": "case_534",
+     "is_deletion": false,
+     "request_type": "marketing_opt_out"
+    },
+    {
+     "case_id": "case_535",
+     "is_deletion": false,
+     "request_type": "export"
+    },
+    {
+     "case_id": "case_536",
+     "is_deletion": false,
+     "request_type": "account_support"
+    },
+    {
+     "case_id": "case_537",
+     "is_deletion": false,
+     "request_type": "correction"
+    },
+    {
+     "case_id": "case_538",
+     "is_deletion": false,
+     "request_type": "marketing_opt_out"
+    },
+    {
+     "case_id": "case_539",
+     "is_deletion": false,
+     "request_type": "access"
+    },
+    {
+     "case_id": "case_540",
+     "is_deletion": false,
+     "request_type": "access"
+    },
+    {
+     "case_id": "case_541",
+     "is_deletion": false,
+     "request_type": "correction"
+    },
+    {
+     "case_id": "case_542",
+     "is_deletion": false,
+     "request_type": "access"
+    },
+    {
+     "case_id": "case_543",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_544",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_545",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_546",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_547",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_548",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_549",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_550",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "37782ec838baa56824d755692e65ac3d36201b8cc183337290222e3781261659": {
+  "input_tokens": 1561,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 731,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_401",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_402",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_403",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_404",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_405",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_406",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_407",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_408",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_409",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_410",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_411",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_412",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_413",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_414",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_415",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_416",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_417",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_418",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_419",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_420",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_421",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_422",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_423",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_424",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_425",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "4790c11a5f939f389a97c7239355112308b259c79a35c2fc8038134ddd048721": {
+  "input_tokens": 1574,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_258",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_259",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_260",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_261",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_262",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_263",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_264",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_265",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_266",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_267",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_268",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_269",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_270",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_271",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_272",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_273",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_274",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_275",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_276",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_277",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_278",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_279",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_280",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_281",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_282",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "4ed5ae0d4fdfbb3cc145fbc86201d4ac87b3cae529c0724aceeef08ff616b61b": {
+  "input_tokens": 1506,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 510,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "audit_record_003",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_03"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "audit_record_002",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_03"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "audit_record_001",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_03"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "audit_record_006",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_03"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "audit_record_005",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_03"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "audit_record_004",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_03"
+     ]
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "54d16ab7940eba169f9e3bbd7be577c2ff1f49f9a186b5a3acd0b4ff46e55e8a": {
+  "input_tokens": 1566,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_251",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_252",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_253",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_254",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_255",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_256",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_257",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_258",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_259",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_260",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_261",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_262",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_263",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_264",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_265",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_266",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_267",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_268",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_269",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_270",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_271",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_272",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_273",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_274",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_275",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "5666cada9ca8f07b22acf4b16d741aefa47effd3ec1cf380f8d34f57cefe0c68": {
+  "input_tokens": 1542,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 970,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_83",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_84",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_85",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_86",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_87",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_88",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_89",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_90",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_91",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_92",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_93",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_94",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_95",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_96",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_97",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_98",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_99",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_100",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_101",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_102",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_103",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_104",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_105",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_106",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_107",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "57b5e7da770732c4ff9dd578470dd5ac7842336d79e825e5fd709df5b140f609": {
+  "input_tokens": 1568,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_126",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_127",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_128",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_129",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_130",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_131",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_132",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_133",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_134",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_135",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_136",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_137",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_138",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_139",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_140",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_141",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_142",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_143",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_144",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_145",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_146",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_147",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_148",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_149",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_150",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "590264f77cbcc6f0979eda82974c95e251d2616650deeb5e2845afa45432bc73": {
+  "input_tokens": 1558,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 679,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_326",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_327",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_328",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_329",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_330",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_331",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_332",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_333",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_334",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_335",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_336",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_337",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_338",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_339",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_340",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_341",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_342",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_343",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_344",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_345",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_346",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_347",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_348",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_349",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_350",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "62be275b28107cc5148962c238920f71ce7b55c8b78ebcae58db27437bf7d288": {
+  "input_tokens": 1478,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 85,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "priya.raman@gmail.com"
+     ],
+     "enabled": null,
+     "names": [
+      "Priya Raman"
+     ],
+     "phones": [
+      "+91 98765 73142"
+     ],
+     "resource_id": "support_001",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "64a2d1915d3af03d375f5950769450fa36b9fc4a1ccc012a63cd7e5cf7e4d1ee": {
+  "input_tokens": 1400,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 962,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_01",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_02",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_03",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_04",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_05",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_06",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_07",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_08",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_09",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_10",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_11",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_12",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_13",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_14",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_15",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_16",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_17",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_18",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_19",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_20",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_21",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_22",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_23",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_24",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_25",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "6b1124867515c399af9bdc7fe189f04d6e5dc17e0ca51ee9b91c757dee8636ef": {
+  "input_tokens": 1558,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 679,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_133",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_134",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_135",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_136",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_137",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_138",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_139",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_140",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_141",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_142",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_143",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_144",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_145",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_146",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_147",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_148",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_149",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_150",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_151",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_152",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_153",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_154",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_155",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_156",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_157",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "74b77bc865a424d9c0378f92c8633b0bd3328d37014d97b0bb55319467db5681": {
+  "input_tokens": 1579,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_108",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_109",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_110",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_111",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_112",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_113",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_114",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_115",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_116",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_117",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_118",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_119",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_120",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_121",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_122",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_123",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_124",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_125",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_126",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_127",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_128",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_129",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_130",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_131",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_132",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "7856998c026554cac6e0a68e3abdfe40191f615fef642f2dfa8eb7b4470d494b": {
+  "input_tokens": 1547,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_276",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_277",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_278",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_279",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_280",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_281",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_282",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_283",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_284",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_285",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_286",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_287",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_288",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_289",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_290",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_291",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_292",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_293",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_294",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_295",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_296",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_297",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_298",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_299",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_300",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "7a40997fe471e247b6fd999a998c2b5cc8d51641bab8a75fd34185f2e830f1e1": {
+  "input_tokens": 1547,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_351",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_352",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_353",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_354",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_355",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_356",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_357",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_358",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_359",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_360",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_361",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_362",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_363",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_364",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_365",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_366",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_367",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_368",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_369",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_370",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_371",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_372",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_373",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_374",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_375",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "7a86d140d3ea296891938a562d354ada205a07bce77c4fc4d671e7af19903864": {
+  "input_tokens": 1562,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_308",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_309",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_310",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_311",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_312",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_313",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_314",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_315",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_316",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_317",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_318",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_319",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_320",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_321",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_322",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_323",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_324",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_325",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_326",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_327",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_328",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_329",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_330",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_331",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_332",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "8036e5d5f2104a811b7455af81afee6d97d88f10237b4450e73adc7b37482bd6": {
+  "input_tokens": 1513,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 962,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_33",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_34",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_35",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_36",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_37",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_38",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_39",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_40",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_41",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_42",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_43",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_44",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_45",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_46",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_47",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_48",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_49",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_50",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_51",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_52",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_53",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_54",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_55",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_56",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_57",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "869642da2067ea3e95b6b1eeb80942ac24579b45b2601873ecad0a91da40b276": {
+  "input_tokens": 1478,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 120,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "ingrid.dahl@outlook.com"
+     ],
+     "enabled": null,
+     "names": [
+      "Ingrid Dahl"
+     ],
+     "phones": [],
+     "resource_id": null,
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_18"
+     ]
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "907f4d76e1c9329688cebd0a6ac9f0521e0062d8fb216e48e93a10fbad97ce14": {
+  "input_tokens": 946,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 63,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "audit_record_003",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_03"
+     ]
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "90a4bae42d5d31bf150714a4559220ac70d535fe07e4b66572d8ce19d6f17a2b": {
+  "input_tokens": 1480,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 126,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "darwish.omar@icloud.com"
+     ],
+     "enabled": null,
+     "names": [
+      "Omar Darwish"
+     ],
+     "phones": [],
+     "resource_id": "analytics_7438",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_20"
+     ]
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "956545ebc2cbd7ea56d6d42b0815e4b4d80e79aa7a8029371d3c013e84be8dd8": {
+  "input_tokens": 1560,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_508",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_509",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_510",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_511",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_512",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_513",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_514",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_515",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_516",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_517",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_518",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_519",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_520",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_521",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_522",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_523",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_524",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_525",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_526",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_527",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_528",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_529",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_530",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_531",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_532",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "9aac6d289c00e09b5c49a5108e776841024a8dca572fc96b9750604f76c5e864": {
+  "input_tokens": 1480,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 135,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "jain.aditi@gmail.com"
+     ],
+     "enabled": true,
+     "names": [],
+     "phones": [],
+     "resource_id": "data_flow_1121",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": null,
+     "emails": [
+      "lucia-torres@gmail.com"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "data_flow_9846",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "9fad485b0f2449179c1e6f4aef8d704d5630d9cdb1a8376af2017839da00f118": {
+  "input_tokens": 1506,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 258,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": false,
+     "emails": [
+      "marcus.lee@northstar.shop"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "export_1261",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": true,
+     "emails": [
+      "ingrid.dahl@outlook.com"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "export_1260",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": false,
+     "emails": [
+      "sara.kim@northstar.shop"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "export_1259",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    },
+    {
+     "available": true,
+     "emails": [
+      "daniel.park@northstar.shop"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "export_1258",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "9fe31e37244a80871b7a97e23ac73ce1ae4742e29fd8b5b22b4589b764153b50": {
+  "input_tokens": 1401,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 997,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_526",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_527",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_528",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_529",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_530",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_531",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_532",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_533",
+     "is_deletion": false,
+     "request_type": "correction"
+    },
+    {
+     "case_id": "case_534",
+     "is_deletion": false,
+     "request_type": "marketing_opt_out"
+    },
+    {
+     "case_id": "case_535",
+     "is_deletion": false,
+     "request_type": "export"
+    },
+    {
+     "case_id": "case_536",
+     "is_deletion": false,
+     "request_type": "account_support"
+    },
+    {
+     "case_id": "case_537",
+     "is_deletion": false,
+     "request_type": "correction"
+    },
+    {
+     "case_id": "case_538",
+     "is_deletion": false,
+     "request_type": "marketing_opt_out"
+    },
+    {
+     "case_id": "case_539",
+     "is_deletion": false,
+     "request_type": "access"
+    },
+    {
+     "case_id": "case_540",
+     "is_deletion": false,
+     "request_type": "export"
+    },
+    {
+     "case_id": "case_541",
+     "is_deletion": false,
+     "request_type": "correction"
+    },
+    {
+     "case_id": "case_542",
+     "is_deletion": false,
+     "request_type": "access"
+    },
+    {
+     "case_id": "case_543",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_544",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_545",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_546",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_547",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_548",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_549",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_550",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "a41314937c478e4f93e2a081ca248bf6783b27ecb64d0bda9e2383fd934bfedc": {
+  "input_tokens": 1549,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 679,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_358",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_359",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_360",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_361",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_362",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_363",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_364",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_365",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_366",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_367",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_368",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_369",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_370",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_371",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_372",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_373",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_374",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_375",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_376",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_377",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_378",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_379",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_380",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_381",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_382",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "a4da2ac1745f41030af2884cdfdda465100b1d54ee78e48040d186429ec1db44": {
+  "input_tokens": 1588,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_501",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_502",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_503",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_504",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_505",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_506",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_507",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_508",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_509",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_510",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_511",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_512",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_513",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_514",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_515",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_516",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_517",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_518",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_519",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_520",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_521",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_522",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_523",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_524",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_525",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "b28f2a87e87ad144e9d9b99fe16b2f991457c14b6fa28fd969747e2b02826f8b": {
+  "input_tokens": 1482,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 706,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_26",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_27",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_28",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_29",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_30",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_31",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_32",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_33",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_34",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_35",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_36",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_37",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_38",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_39",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_40",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_41",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_42",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_43",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_44",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_45",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_46",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_47",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_48",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_49",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_50",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "b2971a103a707bd540fef49a74035071f910a2ae003f4a9e0da65ae022bbbeb3": {
+  "input_tokens": 1581,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_483",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_484",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_485",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_486",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_487",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_488",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_489",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_490",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_491",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_492",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_493",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_494",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_495",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_496",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_497",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_498",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_499",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_500",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_501",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_502",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_503",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_504",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_505",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_506",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_507",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "b5a1a14bbab8edd642f76fa08f6e350cea88ac71ec625e76acc67010dade6ca4": {
+  "input_tokens": 1572,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_101",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_102",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_103",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_104",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_105",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_106",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_107",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_108",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_109",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_110",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_111",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_112",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_113",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_114",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_115",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_116",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_117",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_118",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_119",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_120",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_121",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_122",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_123",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_124",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_125",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "b6225b283c176db2a54db71ef81f906b6ed7021cb040bfa7b332f0134d3615b7": {
+  "input_tokens": 1506,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 450,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": null,
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_17"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "ORD-20263245",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_17"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "CS-3245",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_17"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "CS-3378",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_17"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "FIN-7742",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_17"
+     ]
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "b66404057c7c2f07819866ccbcf50a8bfdb767738e3914e1087378f3212c37f9": {
+  "input_tokens": 11,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 9,
+  "provider": "google-gemini",
+  "response": {
+   "ok": true
+  },
+  "task": "smoke_test"
+ },
+ "b6644456912680c2feef7f79f8072efaab15f29a995c08e3c3b52e7971f3a1e0": {
+  "input_tokens": 1553,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_151",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_152",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_153",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_154",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_155",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_156",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_157",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_158",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_159",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_160",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_161",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_162",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_163",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_164",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_165",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_166",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_167",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_168",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_169",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_170",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_171",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_172",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_173",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_174",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_175",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "c218557bb7e5e349c09c1ac41ed7430dd037a60b4aefb88b7d52e7d46d77e759": {
+  "input_tokens": 1542,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_158",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_159",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_160",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_161",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_162",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_163",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_164",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_165",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_166",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_167",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_168",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_169",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_170",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_171",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_172",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_173",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_174",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_175",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_176",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_177",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_178",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_179",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_180",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_181",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_182",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "c87bfce3f0bf265154a2c4f7670692a232b137da9bd4a5e58ee261d64f0b04c2": {
+  "input_tokens": 1548,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_376",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_377",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_378",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_379",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_380",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_381",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_382",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_383",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_384",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_385",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_386",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_387",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_388",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_389",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_390",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_391",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_392",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_393",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_394",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_395",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_396",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_397",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_398",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_399",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_400",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "c93459565ea061a2d2d15ed4d5f89758e029635f1969b8a2c22f1da9a79d5956": {
+  "input_tokens": 1573,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_183",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_184",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_185",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_186",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_187",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_188",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_189",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_190",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_191",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_192",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_193",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_194",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_195",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_196",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_197",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_198",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_199",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_200",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_201",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_202",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_203",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_204",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_205",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_206",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_207",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "d8a639a04171cfbcccd4e8614a0e695b86833475623fd3ea0a325b8a7fb78434": {
+  "input_tokens": 1545,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 679,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_283",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_284",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_285",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_286",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_287",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_288",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_289",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_290",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_291",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_292",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_293",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_294",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_295",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_296",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_297",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_298",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_299",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_300",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_301",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_302",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_303",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_304",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_305",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_306",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_307",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "db259223cd800b2f8955088b6234d2e1ab5819a35b272cf67c81188697d70c1f": {
+  "input_tokens": 1557,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_426",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_427",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_428",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_429",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_430",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_431",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_432",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_433",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_434",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_435",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_436",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_437",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_438",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_439",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_440",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_441",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_442",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_443",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_444",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_445",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_446",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_447",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_448",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_449",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_450",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "de95aa2204a97e1bc34891f48892e31353b7aa491dfac4e4ee2ff5ac09eb948f": {
+  "input_tokens": 1570,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_301",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_302",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_303",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_304",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_305",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_306",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_307",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_308",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_309",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_310",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_311",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_312",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_313",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_314",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_315",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_316",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_317",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_318",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_319",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_320",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_321",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_322",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_323",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_324",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_325",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "ea1545112af333ca5fe38b77b6766aca667f205b709a2938a67de216485c8090": {
+  "input_tokens": 1538,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 963,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_76",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_77",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_78",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_79",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_80",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_81",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_82",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_83",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_84",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_85",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_86",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_87",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_88",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_89",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_90",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_91",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_92",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_93",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_94",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_95",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_96",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_97",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_98",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_99",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_100",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "ec5d208655d523dfee39295919f23f4eab7a7d7ef708a2b9e4ad3f2e30b8bfe3": {
+  "input_tokens": 1563,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_451",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_452",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_453",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_454",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_455",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_456",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_457",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_458",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_459",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_460",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_461",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_462",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_463",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_464",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_465",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_466",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_467",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_468",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_469",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_470",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_471",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_472",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_473",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_474",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_475",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "edeeabba6625730fb08631196666f7dedf67da1fec051ad1bc6e1f47a6b49bcc": {
+  "input_tokens": 1562,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_433",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_434",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_435",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_436",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_437",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_438",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_439",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_440",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_441",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_442",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_443",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_444",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_445",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_446",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_447",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_448",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_449",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_450",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_451",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_452",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_453",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_454",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_455",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_456",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_457",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "f0d298e394f374749c9df7a2457167cad7d9bd57d85b712d53462a59764fc622": {
+  "input_tokens": 1566,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_458",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_459",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_460",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_461",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_462",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_463",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_464",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_465",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_466",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_467",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_468",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_469",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_470",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_471",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_472",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_473",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_474",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_475",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_476",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_477",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_478",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_479",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_480",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_481",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_482",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "f3ddf25e43be0ba751bd700937a2c08897c4838dcda88158903707cdcecb48d4": {
+  "input_tokens": 1506,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 221,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "g.silva76@gmail.com"
+     ],
+     "enabled": null,
+     "names": [
+      "Gabriel Silva"
+     ],
+     "phones": [],
+     "resource_id": "search_428",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_13"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [
+      "g.silva76.jr@gmail.com"
+     ],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "search_1874",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "f48d201380b7ace363267559750c1d17a6f4d70014696e6b0727330a2c074d68": {
+  "input_tokens": 1494,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 126,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "kagyeman8947@fastmail.com"
+     ],
+     "enabled": null,
+     "names": [
+      "Kofi Agyeman",
+      "Maya Chen"
+     ],
+     "phones": [],
+     "resource_id": "support_1034",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "f4ad24598d9f7943d27271e534747fc251786874e9427f0963873dcb2806ee05": {
+  "input_tokens": 1494,
+  "model": "gemini-3.8-flash",
+  "output_tokens": 229,
+  "provider": "google-gemini",
+  "response": {
+   "records": [
+    {
+     "available": null,
+     "emails": [
+      "haruka.s1838@zoho.com"
+     ],
+     "enabled": null,
+     "names": [
+      "Haruka Sato"
+     ],
+     "phones": [
+      "+81 90 7610 2507"
+     ],
+     "resource_id": "account_5762",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": [
+      "user_11"
+     ]
+    },
+    {
+     "available": null,
+     "emails": [],
+     "enabled": null,
+     "names": [],
+     "phones": [],
+     "resource_id": "support_9538",
+     "restore_allowed": null,
+     "status": "present",
+     "user_refs": []
+    }
+   ]
+  },
+  "task": "vision_extraction"
+ },
+ "f6c50dcf91ef1803b6fa58e2b41987da7703c9df836a0722d78bf90308d3313b": {
+  "input_tokens": 1540,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_208",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_209",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_210",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_211",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_212",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_213",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_214",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_215",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_216",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_217",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_218",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_219",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_220",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_221",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_222",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_223",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_224",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_225",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_226",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_227",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_228",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_229",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_230",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_231",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_232",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ },
+ "fffb954babea28e81e06e818d19da98822e8721a36e90ce881849cb604ffcd4f": {
+  "input_tokens": 1562,
+  "model": "gemini-3.5-flash-lite",
+  "output_tokens": 987,
+  "provider": "google-gemini",
+  "response": {
+   "results": [
+    {
+     "case_id": "case_476",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_477",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_478",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_479",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_480",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_481",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_482",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_483",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_484",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_485",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_486",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_487",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_488",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_489",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_490",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_491",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_492",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_493",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_494",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_495",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_496",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_497",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_498",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_499",
+     "is_deletion": true,
+     "request_type": "deletion"
+    },
+    {
+     "case_id": "case_500",
+     "is_deletion": true,
+     "request_type": "deletion"
+    }
+   ]
+  },
+  "task": "intent_classification"
+ }
+}
