@@ -1074,3 +1074,27 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T20:23:00Z] Custom evaluation cases, evaluation report generator, README
+
+User Prompt (verbatim, secrets redacted):
+done
+
+[git pull fast-forward 4484df7..428f136: code/linking.py, code/policy.py, code/vision.py, log.txt]
+
+Agent Response Summary:
+Built the remaining required documentation from real runs. code/evaluation/custom_cases.py adds five synthetic cases with known answers that exercise the real policy engine and planner (active sync recreating a search entry with disable-before-delete ordering, evidence after audit_at ignored, a fully compliant case with retained and anonymized records, an exposed tombstone with an open restore path, and negated or multilingual intent); all five pass. code/evaluation/report.py regenerates evaluation_report.md with submission vs deterministic-only scores, field accuracy, the custom cases, the measured improvement history, known limitations (including that the tie-break rule rests on only a few samples), and per-case diffs. Replaced the root README with setup, run commands, architecture, and key design decisions.
+
+Actions:
+* Created code/evaluation/custom_cases.py, code/evaluation/report.py, code/evaluation/evaluation_report.md
+* Rewrote README.md
+* Ran python3 code/evaluation/custom_cases.py and python3 code/evaluation/report.py
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
