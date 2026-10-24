@@ -60,6 +60,48 @@ KNOWN_LIMITS = [
 ]
 
 
+def sensitivity():
+    """Re-run with the hand-chosen linking windows changed, on the samples AND the unlabeled
+    test set. Rules tuned to the samples would swing; rules on a plateau stay put."""
+    import os
+    from datetime import timedelta as td
+    import linking
+    from intent import classify_all
+    from loaders import load_all
+    from pipeline import AuditPipeline
+    from vision import parse_media
+
+    os.environ["LLM_CACHE_ONLY"] = "1"
+    data = load_all()
+    media, _ = parse_media(data["evidence_files"], log=lambda *a: None)
+    dec = classify_all(data["requests"] + data["sample_requests"], log=lambda *a: None)
+    intents = {c: x for c, (x, _) in dec.items()}
+    default = (linking.WINDOW_BEFORE, linking.WINDOW_AFTER, linking.ORPHAN_WINDOW)
+
+    def run():
+        p = AuditPipeline(data, extra_observations=media)
+        return p.run(data["requests"], intents), score(p.run(data["sample_requests"], intents),
+                                                       data["sample_output"])
+
+    base, _ = run()
+    rows = []
+    for label, (b, a, o) in [("default: 2h before / 30m after, orphan 45m", (2, 0.5, 45)),
+                             ("narrow: 1h / 15m", (1, 0.25, 45)),
+                             ("wide: 3h / 60m", (3, 1, 45)),
+                             ("very wide: 6h / 2h", (6, 2, 45)),
+                             ("orphan window 30m", (2, 0.5, 30)),
+                             ("orphan window 90m", (2, 0.5, 90))]:
+        linking.WINDOW_BEFORE, linking.WINDOW_AFTER, linking.ORPHAN_WINDOW = td(hours=b), td(hours=a), td(minutes=o)
+        test_rows, s = run()
+        changed = sum(x != y for x, y in zip(test_rows, base))
+        status_changed = sum(x["deletion_status"] != y["deletion_status"] for x, y in zip(test_rows, base))
+        rows.append(f"| {label} | {s['status_accuracy']:.1%} | {s['step_f1']:.3f} | {s['sequence_accuracy']:.1%} "
+                    f"| {changed} | {status_changed} |")
+    linking.WINDOW_BEFORE, linking.WINDOW_AFTER, linking.ORPHAN_WINDOW = default
+    os.environ.pop("LLM_CACHE_ONLY", None)
+    return rows
+
+
 def fmt(result):
     return (f"| {result['cases']} | {result['status_accuracy']:.1%} | {result['step_precision']:.3f} | "
             f"{result['step_recall']:.3f} | {result['step_f1']:.3f} | {result['sequence_accuracy']:.1%} |")
@@ -153,6 +195,30 @@ def main():
         "a tie-break and are listed in `review_queue.csv`. Status and policy decisions come from "
         "`deletion_rules.csv` and observed evidence, not from sample-fitted values; the step-level "
         "detail of tie-break cases is the part most likely to score lower on hidden cases.",
+        "",
+        "## Robustness: are we overfitting the 32 samples?",
+        "",
+        "No model is trained here, but the rules were written while reading the samples, so the "
+        "sample scores are optimistic. Three checks that do not depend on the sample labels:",
+        "",
+        "1. **Spec rules vs data heuristics.** Status logic (state at audit_at, policy from "
+        "`deletion_rules.csv`, step ordering) comes from the problem statement. Only the linking "
+        "of identifier-free records uses hand-chosen parameters, and those are the ones tested below.",
+        "2. **Label-free contract checks on the 518 test cases.** For example, COMPLETE cases with an "
+        "uncited verification step fell from 77 to 2 after adding proof of absence; this was measured on "
+        "unlabeled test outputs, not on the samples.",
+        "3. **Sensitivity analysis.** Each hand-chosen window is changed and the pipeline re-run. "
+        "'Test rows changed' counts unlabeled test predictions that differ from the default run.",
+        "",
+        "| Linking parameters | Sample status | Sample step F1 | Sample sequence | Test rows changed (of 518) | Test statuses changed |",
+        "|---|---|---|---|---|---|",
+    ] + sensitivity() + [
+        "",
+        "Reading: no parameter change moves any test status, so the COMPLETE/INCOMPLETE decisions do not "
+        "depend on these heuristics. Step-level output sits on a plateau: widening the windows changes few "
+        "rows and no sample score, while narrowing below the observed job timing (about 1 to 1.5 hours "
+        "before the reported status) breaks linking. Cases whose links still rely on a tie-break are "
+        "listed in `review_queue.csv`, which bounds the exposure.",
         "",
         "## Remaining failures",
         "",

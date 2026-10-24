@@ -1,6 +1,6 @@
 # Evaluation Report
 
-Generated 2026-10-24T20:36:52+00:00 by `python3 code/evaluation/report.py`.
+Generated 2026-10-24T20:56:05+00:00 by `python3 code/evaluation/report.py`.
 
 ## How we evaluate
 
@@ -78,6 +78,25 @@ The rules were developed while reading the 32 samples, so there is no clean hold
 | Anonymized-record window 45m -> 35m | 0 / 518 | 0 | 0.982 (unchanged) |
 
 Statuses never move, and the anonymized-record window is not knife-edge. The account window changes which account is cited in about 5% of cases, all of them cases that already depend on a tie-break and are listed in `review_queue.csv`. Status and policy decisions come from `deletion_rules.csv` and observed evidence, not from sample-fitted values; the step-level detail of tie-break cases is the part most likely to score lower on hidden cases.
+
+## Robustness: are we overfitting the 32 samples?
+
+No model is trained here, but the rules were written while reading the samples, so the sample scores are optimistic. Three checks that do not depend on the sample labels:
+
+1. **Spec rules vs data heuristics.** Status logic (state at audit_at, policy from `deletion_rules.csv`, step ordering) comes from the problem statement. Only the linking of identifier-free records uses hand-chosen parameters, and those are the ones tested below.
+2. **Label-free contract checks on the 518 test cases.** For example, COMPLETE cases with an uncited verification step fell from 77 to 2 after adding proof of absence; this was measured on unlabeled test outputs, not on the samples.
+3. **Sensitivity analysis.** Each hand-chosen window is changed and the pipeline re-run. 'Test rows changed' counts unlabeled test predictions that differ from the default run.
+
+| Linking parameters | Sample status | Sample step F1 | Sample sequence | Test rows changed (of 518) | Test statuses changed |
+|---|---|---|---|---|---|
+| default: 2h before / 30m after, orphan 45m | 100.0% | 0.982 | 81.2% | 0 | 0 |
+| narrow: 1h / 15m | 100.0% | 0.952 | 65.6% | 196 | 0 |
+| wide: 3h / 60m | 100.0% | 0.982 | 81.2% | 27 | 0 |
+| very wide: 6h / 2h | 100.0% | 0.982 | 81.2% | 25 | 0 |
+| orphan window 30m | 100.0% | 0.982 | 81.2% | 0 | 0 |
+| orphan window 90m | 100.0% | 0.982 | 81.2% | 6 | 0 |
+
+Reading: no parameter change moves any test status, so the COMPLETE/INCOMPLETE decisions do not depend on these heuristics. Step-level output sits on a plateau: widening the windows changes few rows and no sample score, while narrowing below the observed job timing (about 1 to 1.5 hours before the reported status) breaks linking. Cases whose links still rely on a tie-break are listed in `review_queue.csv`, which bounds the exposure.
 
 ## Remaining failures
 

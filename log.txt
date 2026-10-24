@@ -1251,3 +1251,24 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T20:55:00Z] Overfitting and credibility: sensitivity analysis added to the evaluation
+
+User Prompt (verbatim, secrets redacted):
+u sure not overfitting model although i know we did not train any model ibut how can we know the credibility
+
+Agent Response Summary:
+Agreed the risk is real even without training: rules written while reading the 32 samples can fit those samples the way a model fits training data, so sample scores are optimistic. Measured credibility three ways that do not rely on sample labels: separated spec-derived logic from data-derived heuristics; used label-free contract checks on the 518 unlabeled test outputs; and ran a sensitivity analysis that perturbs every hand-chosen linking window and counts how many test predictions change. Result: no test status changes under any setting; widening windows changes only 25-27 test rows and no sample score (a plateau), while narrowing to 1h/15m changes 196 rows and drops sample sequence accuracy to 65.6%, showing the default sits on the stable side of the real job timing. Added this as a live-computed section of evaluation_report.md.
+
+Actions:
+* Edited code/evaluation/report.py (sensitivity analysis section)
+* Ran python3 code/evaluation/report.py
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
