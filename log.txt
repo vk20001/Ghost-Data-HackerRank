@@ -754,3 +754,26 @@ branch=main
 repo_root=/home/claude/hackerrank-orchestrate-october26
 worktree=main
 parent_agent=none
+
+## [2026-10-24T19:29:00Z] Build step 3: evidence parsers into one observation table
+
+User Prompt (verbatim, secrets redacted):
+now what next
+
+Agent Response Summary:
+Answered the skipped check question (trace_id join) and built code/evidence.py: parsers for all text evidence (SQL snapshots executed in in-memory SQLite, four JSON layouts, the pipe-separated handover file, and five log styles joined by trace_id) that emit one Observation shape with presence, raw attributes and normalized identifiers; the owning system is derived from the resource_id prefix. Result: 2,893 observations from 79 files (15 image/PDF files left for the vision step). Ran a diagnostic against the 32 samples: almost every expected non-account resource links to its user through identifiers, but about half of the account records can only be tied to a user through deletion activity timing, which is ambiguous when several cases share a window; flagged this as the next problem to solve.
+
+Actions:
+* Created code/evidence.py
+* Ran python3 code/evidence.py
+* Diagnostic scripts in scratchpad (not committed): sample resource linkage, account-linking strategies (direct, time window, co-location, propagation)
+* Extracted PDF text (pdftotext) and OCR text (tesseract) for inspection only
+* git commit and push
+
+Context:
+tool=Claude (claude.ai app, agentic workspace)
+model=claude-opus-5-5
+branch=main
+repo_root=/home/claude/hackerrank-orchestrate-october26
+worktree=main
+parent_agent=none
